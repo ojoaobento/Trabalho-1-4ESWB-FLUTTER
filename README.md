@@ -1,3 +1,3 @@
 # Trabalho-1-4ESWB-FLUTTER
 
-**TEMA: GALERIA DE ARTE**
+**TEMA: Galeria de Arte**
