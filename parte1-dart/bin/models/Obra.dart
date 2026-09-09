@@ -12,4 +12,8 @@ class Obra{
   required this.valor,
 }) : dtCadastro = DateTime.now();
 
+  String ficha(){
+    return ("Obra $titulo dos anos $anoCriacao");
+  }
+
 }
