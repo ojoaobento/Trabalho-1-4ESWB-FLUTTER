@@ -9,7 +9,6 @@ class ObraDigital extends Obra{
   required super.anoCriacao,
   required super.artista,
   required super.titulo,
-  required super.valor,
   required this.formato,
   required this.tamanhoMb
   });
