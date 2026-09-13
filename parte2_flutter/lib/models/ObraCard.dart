@@ -39,13 +39,14 @@ class ObraCard extends StatelessWidget {
           ),
 
 
-          SizedBox(height: 4),
+          SizedBox(height: 2),
 
           Text(
             obra.artista,
             style: TextStyle(
-              color: Color(0xFF7A6855),
-              fontStyle: FontStyle.italic
+              color: Color.fromARGB(255, 70, 56, 42),
+              fontStyle: FontStyle.italic,
+              fontWeight: FontWeight.bold
             ),
           ),
 
@@ -55,7 +56,9 @@ class ObraCard extends StatelessWidget {
             ("Ano de Criação: ${obra.anoCriacao}"),
             style: TextStyle(
               color: Color(0xFF7A6855),
-              fontSize: 13
+              fontSize: 13,
+              fontWeight: FontWeight.bold
+
             ),
           )
         ],
