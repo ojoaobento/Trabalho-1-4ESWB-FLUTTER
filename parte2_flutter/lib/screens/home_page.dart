@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:parte2_flutter/models/Galeria.dart';
 import 'package:parte2_flutter/models/Obra.dart';
 import 'package:parte2_flutter/models/ObraDigital.dart';
+import 'package:parte2_flutter/models/ObraCard.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -47,20 +48,14 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.all(16),
             child: Text("Total de obras na ${g1.nome}: ${g1.totalObras}", 
-            style: TextStyle(color: const Color(0xFF3C2F2F), fontWeight: FontWeight.bold),),
+            style: TextStyle(color: const Color(0xFF3C2F2F), fontWeight: FontWeight.bold, fontSize: 18)),
           ),
 
           Expanded(child: ListView.builder(itemCount: g1.obras.length,
             itemBuilder: (context, index){
               final obra = g1.obras[index];
 
-              return ListTile(
-                title: Text(obra.titulo, 
-                style: TextStyle(color: const Color(0xFF3C2F2F), fontWeight: FontWeight.bold),),
-                subtitle: Text(
-                  "${obra.artista} - ${obra.anoCriacao}"
-                , style: TextStyle(fontStyle: FontStyle.italic, color: const Color(0xFF7A6855)),),
-              );
+              return ObraCard(obra: obra);
             }))
         ]
       ),
