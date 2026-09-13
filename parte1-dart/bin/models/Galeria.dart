@@ -4,18 +4,24 @@ class Galeria{
 
     String nome;
 
-    List<Obra> obras = [];
+    final List<Obra> _obras = [];
 
     Galeria({
       required this.nome
     });
 
+    List<Obra> get obras => _obras;
+
     void adicionar(Obra obra){
-      obras.add(obra);
+      _obras.add(obra);
     }
 
-    void mostrarGaleria(Galeria galeria){
-      print("A galeria de obras ${galeria.nome} contém ${obras.length} obras: ");
+    int get totalObras{
+      return _obras.length;
+    }
+
+    void mostrarGaleria(){
+      print("A galeria de obras $nome contém as seguintes obras: ");
       for(Obra mostrarObra in obras){
         print(" - ${mostrarObra.titulo}");
       }

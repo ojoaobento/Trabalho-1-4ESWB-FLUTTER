@@ -10,6 +10,7 @@ void main() {
   Obra o2 = Obra(titulo: "A Última Ceia", artista: "Leonardo da Vinci", anoCriacao: 1498);
   Obra o3 = Obra(titulo: "O Grito", artista: "Edvard Munch", anoCriacao: 1893);
   Obra o4 = Obra(titulo: "Guernica", artista: "Pablo Picasso", anoCriacao: 1937);
+  Obra o5 = Obra(titulo: "Abaporu", artista: "Tarsila do Amaral", anoCriacao: 1928);
 
   ObraDigital od1 = ObraDigital(anoCriacao: 1503, artista: "Leonardo da Vinci", titulo: "Mona Lisa Digital", formato: "PNG", tamanhoMb: 15.5);
   Galeria g1 = Galeria(nome: "Clássicas");
@@ -23,7 +24,11 @@ void main() {
   print("Obra Física -> ficha: ${o1.ficha()}");
   print("Obra Digital -> ficha: ${od1.ficha()}");
   print("========= [3] COMPOSIÇÃO =========");
-  g1.mostrarGaleria(g1);
+  g1.mostrarGaleria();
+  print("========= [4] ENCAPSULAMENTO =========");
+  print("Galeria das obras ${g1.nome} -> total de obras: ${g1.totalObras}");
+  g1.adicionar(o5);
+  print("Após adicionar a obra ${o5.titulo}: ${g1.totalObras}");
 
 
 
