@@ -30,7 +30,4 @@ void main() {
   g1.adicionar(o5);
   print("Após adicionar a obra ${o5.titulo}: ${g1.totalObras}");
 
-
-
-
 }
