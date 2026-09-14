@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
 
           Expanded(child: ListView.builder(itemCount: g1.obras.length,
             itemBuilder: (context, index){
-              final obra = g1.obras[index];
+            final obra = g1.obras[index];
 
             return InkWell(
               borderRadius: BorderRadius.circular(12),
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                 obra: obra,
               ),
             );
-              }
+            }
             )
           )
         ]
