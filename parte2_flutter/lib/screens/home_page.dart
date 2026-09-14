@@ -3,6 +3,7 @@ import 'package:parte2_flutter/models/Galeria.dart';
 import 'package:parte2_flutter/models/Obra.dart';
 import 'package:parte2_flutter/models/ObraDigital.dart';
 import 'package:parte2_flutter/models/ObraCard.dart';
+import 'package:parte2_flutter/screens/page_datalhada.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -55,8 +56,24 @@ class _HomePageState extends State<HomePage> {
             itemBuilder: (context, index){
               final obra = g1.obras[index];
 
-              return ObraCard(obra: obra);
-            }))
+            return InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => PageDatalhada(
+                      obra: obra,
+                    ),
+                  ),
+                );
+              },
+              child: ObraCard(
+                obra: obra,
+              ),
+            );
+              }
+            )
+          )
         ]
       ),
 

@@ -8,7 +8,8 @@ class ObraCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    
+    return (Container(
       margin: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
@@ -63,6 +64,7 @@ class ObraCard extends StatelessWidget {
           )
         ],
       ),      
+    )
     );
   }
 }
