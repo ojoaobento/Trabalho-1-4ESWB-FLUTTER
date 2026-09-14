@@ -4,6 +4,7 @@ import 'package:parte2_flutter/models/Obra.dart';
 import 'package:parte2_flutter/models/ObraDigital.dart';
 import 'package:parte2_flutter/models/ObraCard.dart';
 import 'package:parte2_flutter/screens/page_datalhada.dart';
+import 'package:parte2_flutter/screens/cadastro_Page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -39,7 +40,22 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color(0xFFFAF7F2),
         title: Text("Galeria de Obras",
         style: TextStyle(color: const Color(0xFF8C6D31), fontWeight: FontWeight.bold),),
-        centerTitle: true
+        centerTitle: true,
+        actions: [
+          IconButton(icon: Icon(Icons.add),
+          onPressed: () async {
+            final novaObra = await Navigator.of(context).push<Obra>(
+              MaterialPageRoute(builder: (context) => CadastroPage(),)
+            );
+
+
+            if(novaObra != null){
+              setState(() {
+                g1.adicionar(novaObra);
+              });
+            }
+          },)
+        ],
       ),
 
       body: Column(
