@@ -26,3 +26,8 @@ O projeto foi desenvolvido em duas partes:
 | 8 | Navegação | [home_page.dart:75-89](./parte2_flutter/lib/screens/home_page.dart#L75-L89) | Toque em uma obra abre a tela de detalhes passando o objeto |
 | 9 | Formulário | [cadastro_page.dart:4-157](./parte2_flutter/lib/screens/cadastro_page.dart#L4-L157) | Três `TextFormField`, cada um com `TextEditingController`, e botão de confirmação |
 | 10 | Estado | [home_page.dart:45-59](./parte2_flutter/lib/screens/home_page.dart#L45-L59) | `setState` adiciona a nova obra e atualiza a lista e o total |
+
+
+## Como executar o projeto
+
+Para executar a **Parte 1 — Dart**, acesse a pasta `parte1-dart` pelo terminal e execute o comando `dart run`. Para executar a **Parte 2 — Flutter**, acesse a pasta `parte2_flutter`, execute `flutter pub get` para instalar as dependências e, em seguida, `flutter run` para iniciar o aplicativo. Caso queira executar diretamente no navegador Google Chrome, utilize `flutter run -d chrome`. 
