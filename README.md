@@ -1,4 +1,4 @@
-## 🎨 Tema: Galeria de Arte
+## Tema: Galeria de Arte
 
 Este projeto tem como tema uma **Galeria de Arte**, onde são cadastradas e exibidas diferentes obras de arte.
 
