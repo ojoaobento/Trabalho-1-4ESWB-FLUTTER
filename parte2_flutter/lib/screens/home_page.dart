@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:parte2_flutter/models/Galeria.dart';
-import 'package:parte2_flutter/models/Obra.dart';
-import 'package:parte2_flutter/models/ObraDigital.dart';
-import 'package:parte2_flutter/models/ObraCard.dart';
+import 'package:parte2_flutter/models/galeria.dart';
+import 'package:parte2_flutter/models/obra.dart';
+import 'package:parte2_flutter/models/obra_digital.dart';
+import 'package:parte2_flutter/models/obra_card.dart';
 import 'package:parte2_flutter/screens/page_datalhada.dart';
-import 'package:parte2_flutter/screens/cadastro_Page.dart';
+import 'package:parte2_flutter/screens/cadastro_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

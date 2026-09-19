@@ -1,4 +1,4 @@
-import 'Obra.dart';
+import 'obra.dart';
 
 class Galeria{
 
@@ -18,12 +18,5 @@ class Galeria{
 
     int get totalObras{
       return _obras.length;
-    }
-
-    void mostrarGaleria(){
-      print("A galeria de obras $nome contém as seguintes obras: ");
-      for(Obra mostrarObra in obras){
-        print(" - ${mostrarObra.titulo}");
-      }
     }
 }

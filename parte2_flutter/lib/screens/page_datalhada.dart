@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:parte2_flutter/models/Obra.dart';
+import 'package:parte2_flutter/models/obra.dart';
 
 
 class PageDatalhada extends StatelessWidget {

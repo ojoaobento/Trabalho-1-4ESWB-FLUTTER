@@ -1,6 +1,6 @@
-import 'models/Obra.dart';
-import 'models/ObraDigital.dart';
-import 'models/Galeria.dart';
+import 'models/obra.dart';
+import 'models/obra_digital.dart';
+import 'models/galeria.dart';
 
 
 void main() {

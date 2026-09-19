@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Obra.dart';
+import 'obra.dart';
 
 class ObraCard extends StatelessWidget {
   final Obra obra;

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:parte2_flutter/screens/home_page.dart';
 
 void main() {
-  runApp(telaPrincipal());
+  runApp(TelaPrincipal());
 }
 
-class telaPrincipal extends StatelessWidget {
-  const new({super.key});
+class TelaPrincipal extends StatelessWidget {
+  const TelaPrincipal({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:parte2_flutter/models/Obra.dart';
+import 'package:parte2_flutter/models/obra.dart';
 
 class CadastroPage extends StatefulWidget {
-  const new({super.key});
+  const CadastroPage({super.key});
 
   @override
   State<CadastroPage> createState() => _CadastroPageState();
