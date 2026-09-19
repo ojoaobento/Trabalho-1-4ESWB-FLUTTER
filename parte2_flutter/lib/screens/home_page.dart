@@ -22,13 +22,13 @@ class _HomePageState extends State<HomePage> {
   void initState(){
     super.initState();
 
-    g1.adicionar(Obra(titulo: "Noite Estrelada", artista: "Vincent van Gogh", anoCriacao: 1889));
-    g1.adicionar(Obra(titulo: "A Última Ceia", artista: "Leonardo da Vinci", anoCriacao: 1498));
-    g1.adicionar(Obra(titulo: "O Grito", artista: "Edvard Munch", anoCriacao: 1893));
-    g1.adicionar(Obra(titulo: "Guernica", artista: "Pablo Picasso", anoCriacao: 1937));
-    g1.adicionar(Obra(titulo: "Abaporu", artista: "Tarsila do Amaral", anoCriacao: 1928));
+    g1.adicionar(Obra(titulo: "Noite Estrelada", artista: "Vincent van Gogh", anoCriacao: 1889, movimentoArtistico: "Pós-Impressionismo",));
+    g1.adicionar(Obra(titulo: "A Última Ceia", artista: "Leonardo da Vinci", anoCriacao: 1498, movimentoArtistico: "Renascimento"));
+    g1.adicionar(Obra(titulo: "O Grito", artista: "Edvard Munch", anoCriacao: 1893, movimentoArtistico: "Expressionismo"));
+    g1.adicionar(Obra(titulo: "Guernica", artista: "Pablo Picasso", anoCriacao: 1937, movimentoArtistico: "Cubismo"));
+    g1.adicionar(Obra(titulo: "Abaporu", artista: "Tarsila do Amaral", anoCriacao: 1928, movimentoArtistico: "Modernismo"));
     g1.adicionar(ObraDigital(anoCriacao: 1503, artista: "Leonardo da Vinci", titulo: "Mona Lisa Digital", formato: "PNG",
-     tamanhoMb: 15.5));
+     tamanhoMb: 15.5, movimentoArtistico: "Renascimento"));
   }
   
   

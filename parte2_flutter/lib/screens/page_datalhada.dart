@@ -25,18 +25,27 @@ class PageDatalhada extends StatelessWidget {
       body: Padding(padding: EdgeInsets.all(20),
       child: Column(
         children: [
-          Center(
-          child: Text(obra.titulo,
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 15
-          ),)),
+          Center(),
 
           SizedBox(height: 16),
 
-          Text(obra.artista),
+          Text(obra.artista, style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16
+          ),),
 
-          Text("Ano de criação: ${obra.anoCriacao}"),
+          Text("Ano de criação: ${obra.anoCriacao}", style: 
+          TextStyle(
+            decoration: TextDecoration.underline,
+            decorationThickness: 1.5,
+
+          ),),
+
+          SizedBox(height: 16),
+
+          Text("Movimento Artístico: ${obra.movimentoArtistico}", style: TextStyle(
+            fontWeight: FontWeight.bold
+          ),),
 
           SizedBox(height: 16),
 

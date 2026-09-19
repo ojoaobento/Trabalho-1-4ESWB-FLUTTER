@@ -5,12 +5,12 @@ import 'models/galeria.dart';
 
 void main() {
 
-  Obra o1 = Obra(titulo: "Noite Estrelada", artista: "Vincent van Gogh", anoCriacao: 1889);
+  Obra o1 = Obra(titulo: "Noite Estrelada", artista: "Vincent van Gogh", anoCriacao: 1889, movimentoArtistico: "Pós-Impressionismo");
 
-  Obra o2 = Obra(titulo: "A Última Ceia", artista: "Leonardo da Vinci", anoCriacao: 1498);
-  Obra o3 = Obra(titulo: "O Grito", artista: "Edvard Munch", anoCriacao: 1893);
-  Obra o4 = Obra(titulo: "Guernica", artista: "Pablo Picasso", anoCriacao: 1937);
-  Obra o5 = Obra(titulo: "Abaporu", artista: "Tarsila do Amaral", anoCriacao: 1928);
+  Obra o2 = Obra(titulo: "A Última Ceia", artista: "Leonardo da Vinci", anoCriacao: 1498, movimentoArtistico: "Renascimento");
+  Obra o3 = Obra(titulo: "O Grito", artista: "Edvard Munch", anoCriacao: 1893, movimentoArtistico: "Expressionismo");
+  Obra o4 = Obra(titulo: "Guernica", artista: "Pablo Picasso", anoCriacao: 1937, movimentoArtistico: "Cubismo");
+  Obra o5 = Obra(titulo: "Abaporu", artista: "Tarsila do Amaral", anoCriacao: 1928, movimentoArtistico: "Modernismo");
 
   ObraDigital od1 = ObraDigital(anoCriacao: 1503, artista: "Leonardo da Vinci", titulo: "Mona Lisa Digital", formato: "PNG", tamanhoMb: 15.5);
   Galeria g1 = Galeria(nome: "Clássicas");

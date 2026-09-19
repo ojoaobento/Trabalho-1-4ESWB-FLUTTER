@@ -29,6 +29,7 @@ class _CadastroPageState extends State<CadastroPage> {
     final anoCriacao = int.tryParse(anoCriacaoController.text);
 
 
+
     if (titulo.isEmpty || artista.isEmpty || anoCriacao == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -42,7 +43,7 @@ class _CadastroPageState extends State<CadastroPage> {
     final novaObra = Obra(
       titulo: titulo,
       artista: artista,
-      anoCriacao: anoCriacao
+      anoCriacao: anoCriacao,
     );
     Navigator.of(context).pop(novaObra);
   }

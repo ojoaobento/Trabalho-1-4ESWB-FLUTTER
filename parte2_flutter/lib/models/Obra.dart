@@ -1,6 +1,7 @@
 class Obra{
   String titulo='';
   String artista='';
+  String movimentoArtistico='';
   int anoCriacao=0;
   DateTime? dtCadastro;
 
@@ -8,6 +9,7 @@ class Obra{
   required this.titulo,
   required this.artista,
   required this.anoCriacao,
+  this.movimentoArtistico = 'Não informado',
 }) : dtCadastro = DateTime.now();
 
   String ficha(){
